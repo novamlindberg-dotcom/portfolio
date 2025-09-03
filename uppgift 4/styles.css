@@ -1,0 +1,262 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: pink; 
+    text-decoration: none;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: palevioletred;
+    vertical-align: top;
+}
+
+body {
+    background-image: url('bakgrund.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Lexend Giga', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0;
+}
+#lineup {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: wrap;          
+  justify-content: center;   
+  gap: 20px;
+  padding: 20px;
+}
+
+#lineup img {
+    max-width: 500px;           
+    width: 100%;
+    height: auto;
+}
+
+#titel {
+    width: 100%;
+    margin: 0;
+}
+
+.textruta {
+    display: flex;               
+    flex-direction: column;
+    gap: 15px;     
+    align-items: center;         
+    justify-content: center;     
+    width: 100%;
+    background-color: palevioletred;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: pink;
+    border: 1px solid pink;
+    border-radius: 7px;
+    margin-bottom: 15px;         
+  }
+
+  .textruta2 {
+    display: flex;               
+    flex-direction: column;
+    align-items: center;         
+    justify-content: center;     
+    width: 100%;
+    background-color: rgb(246, 203, 11);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 0;
+    margin-bottom: 10px;         
+  }
+
+  .textruta2 p {
+    margin: 0 0 10px 0;
+    font-size: 1rem; 
+  }
+  
+  .textruta2 .extra-info {
+    font-size: 0.7rem; 
+  }
+
+  .textruta p {
+    margin: 0 0 10px 0;
+    font-size: 1rem; 
+  }
+  
+  .textruta .extra-info {
+    font-size: 0.7rem; 
+  }
+
+  .image {
+    flex: 1 1 400px; 
+    max-width: 600px;
+  }
+
+  #image-container {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 10px;                
+    padding: 10px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: 0;
+    vertical-align: top;
+  }
+
+  .carousel-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: palevioletred;
+    box-sizing: border-box;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+    vertical-align: bottom;
+  }
+
+  .box {
+    min-width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    background: palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 7px;
+  }
+
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .kontakt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .kontakt-form {
+    background-color: palevioletred;
+    color: pink;
+    border: 0;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    font-family: 'Lexend Giga', sans-serif;
+  }
+  
+  .kontakt-form input,
+  .kontakt-form textarea {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: palevioletred;
+    font-family: 'Lexend Giga', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .kontakt-form input:focus,
+  .kontakt-form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(246, 203, 11); 
+    background-color: #fffaf0;
+  }
+  
+  .kontakt-form button {
+    background-color: rgb(246, 203, 11);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kontakt-form button:hover {
+    background-color: #e3b900;
+  }
+  .bakgrundssektion {
+    position: relative;
+    z-index: 0; 
+  }
+  
+  .fast-bild {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+  }
+  
+  header {
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .header-bild {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  #navigation {
+    position: sticky;
+    top: 0;
+    background-color: palevioletred;
+    z-index: 2; 
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
